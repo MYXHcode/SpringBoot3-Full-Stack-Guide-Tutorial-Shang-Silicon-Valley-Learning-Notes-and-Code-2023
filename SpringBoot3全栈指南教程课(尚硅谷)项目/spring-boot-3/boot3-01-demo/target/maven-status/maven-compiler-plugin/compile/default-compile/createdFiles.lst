@@ -1,0 +1,6 @@
+com\myxh\springboot\bean\Dog.class
+com\myxh\springboot\bean\Person.class
+com\myxh\springboot\bean\Child.class
+com\myxh\springboot\MainApplication.class
+com\myxh\springboot\bean\Cat.class
+com\myxh\springboot\controller\HelloController.class

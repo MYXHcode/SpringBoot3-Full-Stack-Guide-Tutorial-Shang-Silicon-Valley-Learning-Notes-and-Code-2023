@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- 接口的全类名和 namespace 的值是一一对应的 -->
+<mapper namespace="com.myxh.springboot.ssm.mapper.UserMapper">
+    <select id="getUserById" resultType="com.myxh.springboot.ssm.bean.User">
+        # select id, login_name as loginName, nick_name as nickName, password from t_user where id=#{};
+        select * from t_user where id = #{};
+    </select>
+</mapper>

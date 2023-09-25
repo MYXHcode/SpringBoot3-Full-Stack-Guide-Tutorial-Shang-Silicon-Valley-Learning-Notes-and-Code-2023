@@ -1,0 +1,36 @@
+2023-09-14 20:24:42.815  INFO 96528 --- [main] c.m.s.l.Boot303LoggingApplication        : Starting Boot303LoggingApplication using Java 17.0.6 with PID 96528 (D:\CodeProjects\Java\SpringBoot\SpringBoot3全栈指南教程课(尚硅谷)项目\spring-boot-3\boot3-03-logging\target\classes started by MYXH in D:\CodeProjects\Java\SpringBoot\SpringBoot3全栈指南教程课(尚硅谷)项目\spring-boot-3)
+2023-09-14 20:24:42.825  INFO 96528 --- [main] c.m.s.l.Boot303LoggingApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-09-14 20:24:43.709  INFO 96528 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-09-14 20:24:43.712  INFO 96528 --- [main] o.a.c.c.AprLifecycleListener             : Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+2023-09-14 20:24:43.725  INFO 96528 --- [main] o.a.c.c.AprLifecycleListener             : OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+2023-09-14 20:24:43.737  INFO 96528 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-09-14 20:24:43.738  INFO 96528 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-14 20:24:43.853  INFO 96528 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-09-14 20:24:43.854  INFO 96528 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 989 ms
+2023-09-14 20:24:43.867 DEBUG 96528 --- [main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2023-09-14 20:24:43.868 DEBUG 96528 --- [main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2023-09-14 20:24:44.037 DEBUG 96528 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-09-14 20:24:44.112 DEBUG 96528 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2023-09-14 20:24:44.127 DEBUG 96528 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-09-14 20:24:44.132 DEBUG 96528 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-09-14 20:24:44.204  INFO 96528 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-14 20:24:44.213  INFO 96528 --- [main] c.m.s.l.Boot303LoggingApplication        : Started Boot303LoggingApplication in 1.991 seconds (process running for 3.108)
+2023-09-14 20:25:01.067  INFO 96528 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-14 20:25:01.068  INFO 96528 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-09-14 20:25:01.068 DEBUG 96528 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2023-09-14 20:25:01.069 DEBUG 96528 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected AcceptHeaderLocaleResolver
+2023-09-14 20:25:01.069 DEBUG 96528 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected FixedThemeResolver
+2023-09-14 20:25:01.070 DEBUG 96528 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@38c85990
+2023-09-14 20:25:01.070 DEBUG 96528 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.support.SessionFlashMapManager@543e94f8
+2023-09-14 20:25:01.071 DEBUG 96528 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-09-14 20:25:01.071  INFO 96528 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2023-09-14 20:25:01.083 DEBUG 96528 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : GET "/hello", parameters={}
+2023-09-14 20:25:01.099 DEBUG 96528 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.myxh.springboot.logging.controller.HelloController#hello(String, String)
+2023-09-14 20:25:01.117 DEBUG 96528 --- [http-nio-8080-exec-1] c.m.s.l.c.HelloController                : debug 日志......
+2023-09-14 20:25:01.121  INFO 96528 --- [http-nio-8080-exec-1] c.m.s.l.c.HelloController                : info 日志...... 参数 a：null 参数 b：null
+2023-09-14 20:25:01.121  WARN 96528 --- [http-nio-8080-exec-1] c.m.s.l.c.HelloController                : warn 日志......
+2023-09-14 20:25:01.121 ERROR 96528 --- [http-nio-8080-exec-1] c.m.s.l.c.HelloController                : error 日志......
+2023-09-14 20:25:01.121  INFO 96528 --- [http-nio-8080-exec-1] c.m.s.l.c.HelloController                : 方法进来了
+2023-09-14 20:25:01.135 DEBUG 96528 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
+2023-09-14 20:25:01.136 DEBUG 96528 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["hello"]
+2023-09-14 20:25:01.144 DEBUG 96528 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK

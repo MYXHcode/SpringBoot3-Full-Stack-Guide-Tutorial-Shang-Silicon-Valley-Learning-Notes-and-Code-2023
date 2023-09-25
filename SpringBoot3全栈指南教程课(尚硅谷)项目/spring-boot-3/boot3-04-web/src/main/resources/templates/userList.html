@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户列表页</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+<!-- 导航区使用公共部分进行替换 -->
+<!-- ~{ 模板名 :: 片段名} -->
+<div th:replace="~{common :: myheader}"></div>
+
+<div class="container">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">序号</th>
+            <th scope="col">用户名</th>
+            <th scope="col">密码</th>
+            <th scope="col">年龄</th>
+            <th scope="col">邮箱</th>
+            <th scope="col">角色</th>
+            <th scope="col">状态信息</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="user, stats : ${userList}" th:object="${user}">
+            <th scope="row" th:text="${user.id}"></th>
+            <!-- <td th:text="${user.userName}"></td> -->
+            <td th:text="*{userName}"></td>
+            <td>[[${user.password}]]</td>
+            <td th:text="|${user.age}(${user.age >= 18 ? '成年' : '未成年'})|"></td>
+            <td th:if="${#strings.isEmpty(user.email)}" th:text="'联系不上'"></td>
+            <td th:if="${not #strings.isEmpty(user.email)}" th:text="${user.email}"></td>
+            <td th:switch="${user.role}">
+                <button th:case="'root'" type="button" class="btn btn-primary">root 用户</button>
+                <button th:case="'admin'" type="button" class="btn btn-secondary">管理员</button>
+                <button th:case="'test'" type="button" class="btn btn-success">测试员</button>
+                <button th:case="'user'" type="button" class="btn btn-light">用户</button>
+            </td>
+            <td>
+                index（索引）：[[${stats.index}]]<br>
+                count（计数）：[[${stats.count}]]<br>
+                size（大小）：[[${stats.size}]]<br>
+                current（当前对象）：[[${stats.current}]]<br>
+                even(true)/odd(false)（奇数/偶数）：[[${stats.even}]]<br/>
+                first（第一个）：[[${stats.first}]]<br/>
+                last（最后的）：[[${stats.last}]]<br/>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>

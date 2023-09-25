@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.micrometer:micrometer-observation:1.11.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../Program Files/CodePrograms/Maven/apache-maven-3.8.1/io/micrometer/micrometer-observation/1.11.3/micrometer-observation-1.11.3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../../Program Files/CodePrograms/Maven/apache-maven-3.8.1/io/micrometer/micrometer-observation/1.11.3/micrometer-observation-1.11.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../Program Files/CodePrograms/Maven/apache-maven-3.8.1/io/micrometer/micrometer-observation/1.11.3/micrometer-observation-1.11.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

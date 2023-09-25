@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.projectreactor:reactor-core:3.5.9">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../Program Files/CodePrograms/Maven/apache-maven-3.8.1/io/projectreactor/reactor-core/3.5.9/reactor-core-3.5.9.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../../Program Files/CodePrograms/Maven/apache-maven-3.8.1/io/projectreactor/reactor-core/3.5.9/reactor-core-3.5.9-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../Program Files/CodePrograms/Maven/apache-maven-3.8.1/io/projectreactor/reactor-core/3.5.9/reactor-core-3.5.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/boot3-03-logging" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/boot3-01-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/boot3-02-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/boot3-03-logging/pom.xml" />
+        <option value="$PROJECT_DIR$/boot3-04-web/pom.xml" />
+        <option value="$PROJECT_DIR$/boot3-05-ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/boot3-06-features/pom.xml" />
+        <option value="$PROJECT_DIR$/boot3-07-core/pom.xml" />
+        <option value="$PROJECT_DIR$/boot3-08-robot-starter/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

@@ -1,0 +1,12 @@
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <GoCodeStyleSettings>
+      <option name="LOCAL_PACKAGE_PREFIXES" />
+    </GoCodeStyleSettings>
+    <codeStyleSettings language="go">
+      <indentOptions>
+        <option name="USE_TAB_CHARACTER" value="false" />
+      </indentOptions>
+    </codeStyleSettings>
+  </code_scheme>
+</component>

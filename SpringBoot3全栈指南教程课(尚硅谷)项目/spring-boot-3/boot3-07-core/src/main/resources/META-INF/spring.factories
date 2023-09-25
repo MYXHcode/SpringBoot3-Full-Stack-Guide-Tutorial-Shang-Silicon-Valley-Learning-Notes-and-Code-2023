@@ -1,0 +1,5 @@
+org.springframework.boot.SpringApplicationRunListener=\
+com.myxh.springboot.core.listener.MyAppListener
+
+org.springframework.context.ApplicationListener=\
+com.myxh.springboot.core.listener.MyListener

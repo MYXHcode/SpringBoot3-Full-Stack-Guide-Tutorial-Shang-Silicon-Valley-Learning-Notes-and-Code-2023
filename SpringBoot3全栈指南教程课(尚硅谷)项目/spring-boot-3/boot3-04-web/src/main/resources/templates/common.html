@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>通用页面</title>
+</head>
+
+<body>
+<!-- 抽取的片段，名字叫 myheader-->
+<header th:fragment="myheader" class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+            <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+    </div>
+
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a th:href="@{/}" class="nav-link px-2 link-secondary" th:text="#{home}">Home</a></li>
+        <li><a th:href="@{/userList}" class="nav-link px-2" th:text="#{userList}">UserList</a></li>
+        <li><a href="#" class="nav-link px-2" th:text="#{features}">Features</a></li>
+        <li><a href="#" class="nav-link px-2" th:text="#{fAQs}">FAQs</a></li>
+        <li><a href="#" class="nav-link px-2" th:text="#{about}">About</a></li>
+    </ul>
+
+    <div class="col-md-3 text-end">
+        <!-- 配置页面的值去配置文件获取 key -->
+        <button type="button" class="btn btn-outline-primary me-2" th:text="#{login}">Login</button>
+        <button type="button" class="btn btn-primary" th:text="#{sign}">Sign-up</button>
+    </div>
+</header>
+</body>
+</html>

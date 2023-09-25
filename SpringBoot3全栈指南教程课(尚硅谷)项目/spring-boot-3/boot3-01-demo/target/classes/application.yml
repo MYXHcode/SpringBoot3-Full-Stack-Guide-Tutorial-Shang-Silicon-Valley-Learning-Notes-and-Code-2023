@@ -1,0 +1,70 @@
+# 1、k: v，k v 之前是空格区分
+# 2、属性有层级关系，使用下一行，空两个空格
+# 3、左侧对齐的代表同一层级的属性
+
+---
+
+server:
+  port: 8080
+  # port: 8081
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+
+  # 配置 Redis
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+# 下边是一个单独文档
+---
+
+# yaml 表示复杂对象
+person:
+  name: 张三
+  age: 35
+  birth-day: 1988/01/01 00:00:00
+  like: true
+
+  child:
+    name: 李四
+    age: 12
+    birth-day: 2011/01/01
+    # text: ["he\nllo",'wor\nld']
+    text:
+      - "he\nllo"
+      - 'wor\nld'
+      - |
+        cats:
+          cat1:
+            name: 小蓝
+            age: 2
+
+          # 对象也可用 {} 表示
+          cat2: {name: 小灰,age: 1}
+      - >
+        cats:
+        cat1:
+        name: 小蓝
+        age: 2
+      
+        # 对象也可用 {} 表示
+        cat2: {name: 小灰,age: 1}
+
+  dogs:
+    # 数组也可用 - 表示
+    - name: 小黑
+      age: 2
+    - name: 小白
+      age: 1
+
+  cats:
+    cat1:
+      name: 小蓝
+      age: 2
+
+    # 对象也可用 {} 表示
+    cat2: {name: 小灰,age: 1}
